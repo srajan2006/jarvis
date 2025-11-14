@@ -19,7 +19,7 @@ if not OPENAI_API_KEY:
     raise RuntimeError("OPENAI_API_KEY environment variable not set. See comments in file.")
 
 # Initialize OpenAI client
-client = OpenAI(api_key="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")
+client = OpenAI(api_key="")
 
 # Initialize text-to-speech engine
 engine = pyttsx3.init()
@@ -117,3 +117,4 @@ if __name__ == "__main__":
         cmd = take_command()
         if cmd:
             execute_command(cmd)
+
